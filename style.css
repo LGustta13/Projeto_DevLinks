@@ -15,7 +15,7 @@
 
   --toggle-handle-color: rgba(255, 255, 255, 1);
 
-  --background-url: url(./assets/bg-desktop.jpg);
+  --background-url: url(./assets/bg-mobile.jpg);
   --switch-url: url(./assets/MoonStars.svg);
   --footer-icon: #cba4f7;
 }
@@ -27,7 +27,7 @@
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
 
-  --background-url: url(./assets/bg-desktop-light.jpg);
+  --background-url: url(./assets/bg-mobile-light.jpg);
   --switch-url: url(./assets/Sun.svg);
 }
 
@@ -39,13 +39,15 @@ body {
 
 body * {
   color: var(--text-color);
+  heigth: 100vh;
 }
 
 #container {
   /* Visualização */
   /* border: 1px solid red; */
 
-  width: 588px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0px;
 
   display: flex;
@@ -96,11 +98,20 @@ body * {
   background-size: 20px;
   border-radius: 50%;
   border: 0px;
+
+  animation: slide-out 0.4s;
+  transition: outline 0.2s;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
 .light #switch button {
   right: -5px;
   left: initial;
+
+  animation: slide-in 0.4s forwards;
 }
 
 ul {
@@ -164,4 +175,32 @@ footer {
 
 footer ion-icon {
   color: var(--footer-icon);
+}
+
+@media(min-width: 700px) {
+  :root {
+    --background-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --background-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    left: -5px;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: -5px;
+  }
 }
