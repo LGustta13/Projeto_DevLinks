@@ -21,7 +21,7 @@ const projetos_texto = {
 
 const projetos_links = {
   link1:
-    "https://drive.google.com/file/d/1FqV_F_vm_5pQEgPEcDSI5t4S6yIWn7tD/view",
+    "https://drive.google.com/file/d/1fJzazAKdgJbHsF8TJt_9n712rZ6LjsRO/view?usp=sharing",
   link2:
     "https://web.dio.me/articles/internet-das-coisas-e-seu-espaco-na-computacao-em-nuvem?back=%2Farticles&page=1&order=oldes",
   link3: "https://traveller-lgusta.vercel.app/",
