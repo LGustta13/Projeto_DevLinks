@@ -1,0 +1,10 @@
+.light {
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --text-color: rgba(0, 0, 0, 1);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+
+  --background-url: var(--url-mobile-light);
+  --switch-url: var(--url-sun);
+}

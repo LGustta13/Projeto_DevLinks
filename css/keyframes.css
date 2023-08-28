@@ -1,0 +1,17 @@
+@keyframes slide-in {
+  from {
+    left: -5px;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: -5px;
+  }
+}

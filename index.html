@@ -7,20 +7,56 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-  <title>DevLink</title>
+  <title>DevLinks</title>
 
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/light-theme.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/background.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <link rel="stylesheet" href="./css/keyframes.css">
 </head>
 
 <body>
   <div id="container">
     <div id="profile">
       <img src="./assets/avatar-gusta.jpg" alt="profile-picture">
-      <p>Luis Gustavo Oliveira</p>
+      <p id="name"></p>
+      <p id="description"></p>
     </div>
 
     <div id="switch" onclick=toogleMode()>
       <button></button>
+    </div>
+
+    <div id="techs">
+
+      <span>
+        <ion-icon name="logo-html5"></ion-icon>
+        <p>HTML</p>
+      </span>
+
+      <span>
+        <ion-icon name="logo-css3"></ion-icon>
+        <p>CSS</p>
+      </span>
+
+      <span>
+        <ion-icon name="logo-javascript"></ion-icon>
+        <p>JS</p>
+      </span>
+
+      <span>
+        <ion-icon name="logo-react"></ion-icon>
+        <p>REACT</p>
+      </span>
+
+      <span>
+        <ion-icon name="logo-python"></ion-icon>
+        <p>PYTHON</p>
+      </span>
+
+
     </div>
 
     <ul>
@@ -39,7 +75,7 @@
       </li>
 
       <li>
-        <a href="#" target="_blank">Certificações</a>
+        <a href="./certificados.html">Certificações</a>
       </li>
     </ul>
 
@@ -66,7 +102,8 @@
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script src="./script.js"></script>
+  <script src="./js/toogleMode.js"></script>
+  <script src="./js/data.js"></script>
 
 </body>
 

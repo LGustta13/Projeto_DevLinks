@@ -1,47 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-
-  /* width + padding + border = 588 */
-  box-sizing: border-box;
-}
-
-:root {
-  --stroke-color: rgba(255, 255, 255, 0.5);
-  --text-color: rgba(255, 255, 255, 1);
-  --surface-color: rgba(255, 255, 255, 0.1);
-  --surface-color-hover: rgba(255, 255, 255, 0.05);
-  --highlight-color: rgba(255, 255, 255, 0.2);
-
-  --toggle-handle-color: rgba(255, 255, 255, 1);
-
-  --background-url: url(./assets/bg-mobile.jpg);
-  --switch-url: url(./assets/MoonStars.svg);
-  --footer-icon: #cba4f7;
-}
-
-.light {
-  --stroke-color: rgba(0, 0, 0, 0.5);
-  --text-color: rgba(0, 0, 0, 1);
-  --surface-color: rgba(0, 0, 0, 0.05);
-  --surface-color-hover: rgba(0, 0, 0, 0.02);
-  --highlight-color: rgba(0, 0, 0, 0.1);
-
-  --background-url: url(./assets/bg-mobile-light.jpg);
-  --switch-url: url(./assets/Sun.svg);
-}
-
-body {
-  /* shorthand */
-  background: var(--background-url) no-repeat top center/cover;
-  font-family: Inter, "sans-serif";
-}
-
-body * {
-  color: var(--text-color);
-  heigth: 100vh;
-}
-
 #container {
   /* Visualização */
   /* border: 1px solid red; */
@@ -66,11 +22,17 @@ body * {
   border-radius: 50%;
 }
 
+#profile #name {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
 
-#profile p {
+#profile #description {
   font-weight: 400;
   line-height: 24px;
   margin-top: 8px;
+  padding: 0 48px;
 }
 
 #switch {
@@ -112,6 +74,43 @@ body * {
   left: initial;
 
   animation: slide-in 0.4s forwards;
+}
+
+#techs {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+#techs ion-icon {
+  width: 32px;
+  height: 32px;
+
+  padding: 8px;
+  border-radius: 50%;
+
+  transition: background 0.2s;
+}
+
+#techs span {
+  position: relative;
+}
+
+#techs p {
+  display: none;
+
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+#techs ion-icon:hover {
+  background: var(--highlight-color);
+}
+
+#techs ion-icon:hover + p {
+  display: block;
 }
 
 ul {
@@ -175,32 +174,4 @@ footer {
 
 footer ion-icon {
   color: var(--footer-icon);
-}
-
-@media(min-width: 700px) {
-  :root {
-    --background-url: url(./assets/bg-desktop.jpg);
-  }
-
-  .light {
-    --background-url: url(./assets/bg-desktop-light.jpg);
-  }
-}
-
-@keyframes slide-in {
-  from {
-    left: -5px;
-  }
-  to {
-    left: 50%;
-  }
-}
-
-@keyframes slide-out {
-  from {
-    left: 50%;
-  }
-  to {
-    left: -5px;
-  }
 }

@@ -1,0 +1,9 @@
+div {
+  width: 100%;
+  
+}
+
+a {
+  text-decoration: none;
+  -webkit-backdrop-filter: blur(4px);
+}

@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  /* width + padding + border = 588 */
+  box-sizing: border-box;
+}
+
+:root {
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --text-color: rgba(255, 255, 255, 1);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+
+  --toggle-handle-color: rgba(255, 255, 255, 1);
+  --url-mobile: url(../assets/bg-mobile.jpg);
+  --url-mobile-light: url(../assets/bg-mobile-light.jpg);
+  --url-desktop: url(../assets/bg-desktop.jpg);
+  --url-desktop-light: url(../assets/bg-desktop-light.jpg);
+  --url-moon: url(../assets/MoonStars.svg);
+  --url-sun: url(../assets/Sun.svg);
+
+  --background-url: var(--url-mobile);
+  --switch-url: var(--url-moon);
+  --footer-icon: #cba4f7;
+}

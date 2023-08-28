@@ -1,0 +1,9 @@
+@media(min-width: 700px) {
+  :root {
+    --background-url: var(--url-desktop);
+  }
+
+  .light {
+    --background-url: var(--url-desktop-light);
+  }
+}

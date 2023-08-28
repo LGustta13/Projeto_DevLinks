@@ -1,0 +1,12 @@
+body {
+  /* shorthand */
+  background: var(--background-url) no-repeat top center/cover;
+  font-family: Inter, "sans-serif";
+
+  backdrop-filter: blur(10px);
+}
+
+body * {
+  color: var(--text-color);
+  heigth: 100vh;
+}
