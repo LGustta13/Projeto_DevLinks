@@ -13,7 +13,7 @@ const links = {
 }
 
 const projetos_texto = {
-  item1: "IoT e Telemetria",
+  item1: "Monografia - IoT e Telemetria",
   item2: "Artigo - Cloud Computing",
   item3: "NextJS - Time Traveller",
   item4: "Certificações",
