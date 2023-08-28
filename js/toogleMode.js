@@ -1,28 +1,29 @@
-if(localStorage.getItem("light-theme") == "true"){
+if (localStorage.getItem("light-theme") == "true") {
   document.documentElement.classList.toggle("light")
+  document
+    .querySelector("#profile img")
+    .setAttribute("src", "./assets/avatar-gusta-light.jpg")
 }
 
 function toogleMode() {
-
   // Alterar a classe light no HTML
-  const html = document.documentElement; // root
-  let value = html.classList.toggle('light');
+  const html = document.documentElement // root
+  let value = html.classList.toggle("light")
 
-  if(value){
+  if (value) {
     localStorage.setItem("light-theme", true)
   } else {
     localStorage.setItem("light-theme", false)
   }
-  
-  
+
   // Alterar a imagem do usuário pelo CSS
-  const img = document.querySelector('#profile img') // #profile img
-  
-  if(html.classList.contains('light')){
+  const img = document.querySelector("#profile img") // #profile img
+
+  if (html.classList.contains("light")) {
     img.setAttribute("src", "./assets/avatar-gusta-light.jpg")
   } else {
     img.setAttribute("src", "./assets/avatar-gusta.jpg")
   }
 
-  return value;
+  return value
 }
